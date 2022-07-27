@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+
+</head>
+
+<body bgcolor="#ADBBC7">
+    <font face="arial">
+
+        <h2 align="center"> JP Aluguel de Automóveis </h2>
+
+        <fieldset>
+
+            <!-- Contorno ou Margem para o formulario -->
+            <legend align="center"> Cadastro </legend>
+
+
+            <form action="enviar.php" method="post" name="cadastro">
+                <table border="1" align="center">
+
+
+                    <tr>
+                        <td> <label> Nome: </label> </td>
+                        <td> <input type="text" id="nome" name="nome" size="30" maxlength="40"
+                                placeholder="Digite seu nome" required /></td>
+                    </tr>
+
+                    <tr>
+                        <td> <label> CPF: </label> </td>
+                        <td><input type="CPF" id="cpf" name="cpf" size="30" placeholder="Digite seu cpf" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label> RG: </label> </td>
+                        <td><input type="rg" id="rg" name="rg" size="30" placeholder="Digite seu RG" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label> E-mail: </label> </td>
+                        <td><input type="email" id="mail" name="mail" size="30" placeholder="Digite seu e-mail"
+                                required />
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><label> Telefone: </label> </td>
+                        <td><input type="tel" id="telefone" name="telefone" size="30" placeholder="Digite seu telefone"
+                                required /> </td>
+                    </tr>
+
+                    <tr>
+
+                        <td><label> Data de Nascimento: </label></td>
+                        <td><input type="date" id="data_nasc" name="data_nasc" size="30" min="1990-01-01"
+                                max="2004=07-01" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td> <label> CEP: </label> </td>
+                        <td><input type="cep" id="cep" name="cep" size="30" placeholder="Digite seu cep" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td> <label> Endereço: </label> </td>
+                        <td><input type="endereço" id="endereço" name="endereço" size="30"
+                                placeholder="Digite seu endereço" required />
+                        </td>
+                    </tr>
+
+                    <td><label> Você possui CNH? </label></td>
+                    <td><input type="checkbox" id="sim" name="sim" size="30" />
+                        Sim </label>
+                        <label> <input type="checkbox" id="não" name="não" value="não" />
+                            Não </label>
+                    </td>
+
+                    <tr>
+                        <td> <label> CNH: </label> </td>
+                        <td><input type="CNH" id="cnh" name="cnh" size="30" placeholder="Digite sua CNH" required />
+                        </td>
+                    </tr>
+
+
+                </table>
+            </form>
+        </fieldset>
+
+        <fieldset>
+
+            <form>
+                <table align="center">
+
+                    <tr>
+                        <td><label> Login: </label> </td>
+                        <td><input type="log" id="login" name="login" size="30" placeholder="Digite seu login"
+                                required />
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><label> Senha: </label> </td>
+                        <td><input type="password" id="senha" name="senha" size="30" placeholder="Digite sua senha"
+                                required /> </td>
+                    </tr>
+
+
+                </table>
+            </form>
+
+        </fieldset>
+        <fieldset>
+
+            <legend align="center"> Carros disponveis para aluguel </legend>
+
+            <form>
+                <table align="center">
+
+                    <label> Carros: </label>
+                    <select id="marca" name="marca">
+                        <optgroup label="Fiat">
+                            <option> Argo</option>
+                            <option> Cronos</option>
+                            <option> Pulse</option>
+                        </optgroup>
+
+                        <optgroup label="Renault">
+                            <option> Sandero</option>
+                            <option> Duster</option>
+                            <option> Logan</option>
+                        </optgroup>
+
+                        <optgroup label="Volkswagen">
+                            <option> Golf</option>
+                            <option> Crafter</option>
+                            <option> Caddy</option>
+                        </optgroup>
+
+                        <optgroup label="Volvo">
+                            <option> Amarok</option>
+                            <option> Jetta</option>
+                            <option> Gol</option>
+                        </optgroup>
+
+                        <optgroup label="Jeep">
+                            <option> Renegade</option>
+                            <option> Laredo</option>
+                            <option> Comanche</option>
+                        </optgroup>
+
+                    </select>
+
+
+
+                </table>
+            </form>
+        </fieldset>
+    </font>
+</body>
+
+</html>
